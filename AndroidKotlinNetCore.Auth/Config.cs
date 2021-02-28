@@ -39,7 +39,9 @@ namespace AndroidKotlinNetCore.Auth
                  AllowedGrantTypes = GrantTypes.ClientCredentials,
                  ClientSecrets = { new Secret("secret".Sha256()) },
 
-                 AllowedScopes = { IdentityServerConstants.LocalApi.ScopeName}
+                 AllowedScopes = {
+                     IdentityServerConstants.LocalApi.ScopeName
+                 }
              },
 
 
@@ -61,7 +63,6 @@ namespace AndroidKotlinNetCore.Auth
                      IdentityServerConstants.StandardScopes.Profile,
                      "api_product_fullpermission",
                      "api_photo_fullpermission",
-                     
                      //Refresh Token almak için tanımlıyoruz
                      IdentityServerConstants.StandardScopes.OfflineAccess,
                  },
