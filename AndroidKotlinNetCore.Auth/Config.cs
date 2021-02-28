@@ -46,6 +46,8 @@ namespace AndroidKotlinNetCore.Auth
              new Client
              {
                  ClientId = "AndroidClient_ROP",
+                 ClientName = "AndroidClient ROP",
+
                  ClientSecrets = { new Secret("secret".Sha256()) },
 
                  AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
